@@ -895,7 +895,22 @@
     <script src="js/scriptMogo.js"></script>
 
 
-
+    function arrPrimeNumber(k){
+    var newArr = [];
+    for (var i=2;i<=k;i++) {
+         for (var y=i-1;y>0;y--){
+        var res = i % y;
+        if (res === 0 && y>1){
+        break;
+        }
+        if (y===1){
+        newArr.push(i);
+        }
+        }
+        }
+        return newArr;
+        }
+        console.log(arrPrimeNumber(100));
 
 
 
